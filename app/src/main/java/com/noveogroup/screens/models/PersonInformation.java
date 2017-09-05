@@ -6,24 +6,23 @@ import android.os.Parcelable;
 public class PersonInformation implements Parcelable {
     private final String firstName;
     private final String lastName;
-    private final int dayOfMonth;
-    private final int monthOfYear;
-    private final int year;
+    private final MyDate birthday;
 
     public PersonInformation(String firstName, String lastName, int dayOfMonth, int monthOfYear, int year) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.dayOfMonth = dayOfMonth;
-        this.monthOfYear = monthOfYear;
-        this.year = year;
+        birthday = new MyDate(dayOfMonth, monthOfYear, year);
     }
 
     protected PersonInformation(Parcel in) {
         firstName = in.readString();
         lastName = in.readString();
-        dayOfMonth = in.readInt();
-        monthOfYear = in.readInt();
-        year = in.readInt();
+
+        int dayOfMonth = in.readInt();
+        int monthOfYear = in.readInt();
+        int year = in.readInt();
+
+        birthday = new MyDate(dayOfMonth, monthOfYear, year);
     }
 
     public static final Creator<PersonInformation> CREATOR = new Creator<PersonInformation>() {
@@ -47,15 +46,19 @@ public class PersonInformation implements Parcelable {
     }
 
     public int getDayOfMonth() {
-        return dayOfMonth;
+        return birthday.getDay();
     }
 
     public int getMonthOfYear() {
-        return monthOfYear;
+        return birthday.getMonth();
     }
 
     public int getYear() {
-        return year;
+        return birthday.getYear();
+    }
+
+    public MyDate getBirthday() {
+        return birthday;
     }
 
     @Override

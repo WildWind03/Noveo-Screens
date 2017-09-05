@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     android:fillViewport="true">
     <RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -16,62 +15,62 @@
         android:paddingTop="@dimen/activity_vertical_margin"
         tools:context=".activities.MainActivity">
         <TextView
-            android:id="@+id/firstNameTextView"
+            android:id="@+id/first_name_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:text="@string/typeYourFirstNameStr"
-            android:textSize="@dimen/textSize"/>
+            style="@android:style/TextAppearance.Medium"/>
         <EditText
-            android:id="@+id/firstNameEditText"
+            android:id="@+id/first_name_edit_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/firstNameTextView"
+            android:layout_below="@id/first_name_text_view"
             android:layout_centerHorizontal="true"
             android:hint="@string/sampleFirstName"
-            android:textSize="@dimen/textSize"/>
+            style="@android:style/TextAppearance.Medium"/>
         <TextView
-            android:id="@+id/lastNameTextView"
+            android:id="@+id/last_name_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/firstNameEditText"
+            android:layout_below="@id/first_name_edit_text"
             android:layout_centerHorizontal="true"
             android:text="@string/typeYourLastNameStr"
-            android:textSize="@dimen/textSize"/>
+            style="@android:style/TextAppearance.Medium"/>
         <EditText
-            android:id="@+id/lastNameEditText"
+            android:id="@+id/last_name_edit_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/lastNameTextView"
+            android:layout_below="@id/last_name_text_view"
             android:layout_centerHorizontal="true"
             android:hint="@string/sampleLastName"
-            android:textSize="@dimen/textSize"/>
+            style="@android:style/TextAppearance.Medium"/>
         <TextView
-            android:id="@+id/dateTextView"
+            android:id="@+id/date_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/lastNameEditText"
+            android:layout_below="@id/last_name_edit_text"
             android:layout_centerHorizontal="true"
             android:text="@string/chooseYourBirthdayDataStr"
-            android:textSize="@dimen/textSize"/>
+            style="@android:style/TextAppearance.Medium"/>
 
         <DatePicker
-            android:id="@+id/datePicker"
+            android:id="@+id/date_picker"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/dateTextView"
+            android:layout_below="@+id/date_text_view"
             android:layout_centerHorizontal="true"
             android:calendarViewShown="false"
             android:datePickerMode="spinner"
             android:startYear="@integer/startDate"/>
         <Button
-            android:id="@+id/okButton"
+            android:id="@+id/ok_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_below="@id/datePicker"
+            android:layout_below="@id/date_picker"
             android:text="@string/okButtonStr"
-            android:onClick="onOkButtonClick"/>
+            style="@android:style/TextAppearance.Medium"/>
     </RelativeLayout>
 </ScrollView>

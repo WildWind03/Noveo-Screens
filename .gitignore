@@ -1,11 +1,5 @@
-# Created by .ignore support plugin (hsz.mobi)
 .gradle/
 .idea/
-ScreensOrigin.iml
-app/app.iml
-build/
-gen/
-gradle/
-gradlew
-gradlew.bat
-local.properties
+build
+*.properties
+*.iml
