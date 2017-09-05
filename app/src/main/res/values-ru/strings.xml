@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Экраны</string>
+    <string name="chooseYourBirthdayDataStr">Введите дату рождения</string>
+    <string name="okButtonStr">Принять</string>
+    <string name="sampleFirstName">Иван</string>
+    <string name="sampleLastName">Грозный</string>
+    <string name="typeYourFirstNameStr">Введите имя</string>
+    <string name="typeYourLastNameStr">Введите фамилию</string>
+    <string name="invalidDateStr">Некорректная дата</string>
+    <string name="age">Возраст</string>
+</resources>

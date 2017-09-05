@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Screens</string>
+    <string name="typeYourFirstNameStr">Type your first name</string>
+    <string name="typeYourLastNameStr">Type your second name</string>
+    <string name="chooseYourBirthdayDataStr">Choose your birthday</string>
+    <string name="sampleFirstName">Ivan</string>
+    <string name="sampleLastName">Black</string>
+    <string name="okButtonStr">OK</string>
+    <string name="invalidDateStr">Invalid date</string>
+    <string name="age">Age</string>
+</resources>
